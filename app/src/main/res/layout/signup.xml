@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffff"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.conqr.conqr.MainActivity">
+
+    <TextView
+        android:id="@+id/requirements"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="please fill out all fields" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/requirements"
+        android:layout_marginTop="5dp"
+        android:text="Name"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/namein"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/name"
+        android:ems="10"
+        android:hint="full name"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="144dp" />
+
+    <TextView
+        android:id="@+id/dob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/namein"
+        android:layout_marginTop="5dp"
+        android:text="Date of Birth"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/dobin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/dob"
+        android:ems="10"
+        android:hint="dd/mm/yyyy"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/dobin"
+        android:layout_marginTop="5dp"
+        android:text="Email"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/usernamein"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/username"
+        android:ems="10"
+        android:hint="will act as username"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/usernamein"
+        android:layout_marginTop="5dp"
+        android:text="Password"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/passwordin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/password"
+        android:ems="10"
+        android:hint="choose a secure password"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/passwordconfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/passwordin"
+        android:layout_marginTop="5dp"
+        android:text="Confirm Password"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/passwordconfirmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/passwordconfirm"
+        android:ems="10"
+        android:hint="repeat secure password"
+        android:inputType="textPassword" />
+    <Button
+        android:id="@+id/SignUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordconfirmin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:onClick="signup"
+        android:text="create account" />
+
+</RelativeLayout>
+</ScrollView>
+

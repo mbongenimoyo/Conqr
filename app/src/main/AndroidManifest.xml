@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.conqr.conqr">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+        android:name=".SignupActivity"
+        android:label="create">
+    </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="settings">
+        </activity>
+        <activity
+            android:name=".HelpActivity"
+            android:label="help">
+        </activity>
+        <activity
+            android:name=".ChangePassActivity"
+            android:label="changepass">
+        </activity>
+        <activity
+            android:name=".CollectiblesActivity"
+            android:label="collectibles">
+        </activity>
+        <activity
+            android:name=".BadgesActivity"
+            android:label="badges">
+        </activity>
+        <activity
+            android:name=".StickersActivity"
+            android:label="stickers">
+        </activity>
+        <activity
+            android:name=".ScannerActivity"
+            android:label="qrscanner"
+            android:screenOrientation="portrait"
+            tools:replace="screenOrientation">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
